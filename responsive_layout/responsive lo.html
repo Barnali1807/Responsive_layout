@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navigation{
+    background-color:#CD5C5C;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 20px; 
+
+}
+nav{
+    background-image:url(./spriteimage.svg);
+    float:right;
+    width: 200px;
+    background-position: 0px 45px;
+    height: 60px;
+}
+
+ .flex
+ {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+.box1{
+    width: 20px;
+    padding: 20px;
+    height: 200px;
+    
+  flex:33%;
+  
+  background-image:url("images/img1.jpg");
+}
+.box2{
+    width: 20px;
+    padding: 20px;
+    height: 200px;
+ 
+  flex:33%;
+  
+  background-image: url("images/img2.jpg");
+}
+.box3{
+    width: 20px;
+    padding: 20px;
+    height: 200px;
+    
+  flex:33%;
+  
+  background-image: url("images/img3.jpg");
+}
+
+.signup{
+  background-color: skyblue;
+  text-align: center;
+  padding: 20px;
+  height: 100px;
+  flex-wrap: wrap;
+  clear:both;
+  
+}
+.content{
+  background-color: gray;
+  text-align: center;
+  height: 100px;
+  overflow: hidden;
+  
+}
+
+@media screen and(min-width:320px)and(max-width:480px)
+{
+.box1,.box2,.box3,.signup{
+flex:100%;
+}
+@media screen and (min-width:481px)and(max-width:768px)
+{
+.box1,.box2,.box3,.signup{
+flex:100%;
+}
+}
+
+
+
+</style>
+</head>
+
+<div class="navigation">
+<nav></nav></div>
+<body style="font-family:Verdana;color:#000;">
+
+<div style="background-color:#FFC0CB;padding:15px;text-align:center;">
+  <h2>Header</h2>
+</div>
+
+<div class="flex">
+<div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+</div>
+  
+
+<div class="signup">
+    <h2>Sign up</h2>
+   
+  </div>
+</div>
+
+<div>
+  <div class="content">
+<h2>Content</h2>
+</div>
+</body>
+</html>
